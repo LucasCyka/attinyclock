@@ -6,7 +6,7 @@
                 "${workspaceFolder}/**",
                 "/usr/avr/include"
             ],
-            "defines": [],
+            "defines": ["__AVR_ATtiny2313__"],
             "compilerPath": "/usr/bin/avr-gcc",
             "cStandard": "c17",
             "cppStandard": "c++17",

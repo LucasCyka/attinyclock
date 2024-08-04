@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "millis.h": "c"
+        "millis.h": "c",
+        "io.h": "c"
     }
 }
