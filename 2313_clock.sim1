@@ -1,10 +1,10 @@
 <circuit version="1.1.0-SR0" rev="2278" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
 
-<item itemtype="Seven Segment" CircId="Seven Segment-1" mainComp="false" Show_id="true" Show_Val="false" Pos="48,28" rotation="0" hflip="1" vflip="1" label="Hours" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" NumDisplays="2" Vertical_Pins="false" CommonCathode="false" Threshold="1.8 V" MaxCurrent="16 mA" Resistance="1 Ω" />
+<item itemtype="Seven Segment" CircId="Seven Segment-1" mainComp="false" Show_id="true" Show_Val="false" Pos="48,28" rotation="0" hflip="1" vflip="1" label="Hours" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" NumDisplays="2" Vertical_Pins="false" CommonCathode="false" Threshold="1.8 V" MaxCurrent="1 mA" Resistance="1 Ω" />
 
-<item itemtype="Seven Segment" CircId="Seven Segment-2" mainComp="false" Show_id="true" Show_Val="false" Pos="156,28" rotation="0" hflip="1" vflip="1" label="Minutes" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" NumDisplays="2" Vertical_Pins="false" CommonCathode="false" Threshold="1.8 V" MaxCurrent="16 mA" Resistance="1 Ω" />
+<item itemtype="Seven Segment" CircId="Seven Segment-2" mainComp="false" Show_id="true" Show_Val="false" Pos="152,28" rotation="0" hflip="1" vflip="1" label="Minutes" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" NumDisplays="2" Vertical_Pins="false" CommonCathode="false" Threshold="1.8 V" MaxCurrent="1 mA" Resistance="1 Ω" />
 
-<item itemtype="MCU" CircId="tiny2313-4" mainComp="false" Show_id="true" Show_Val="false" Pos="-120,-8" rotation="0" hflip="1" vflip="1" label="attiny2313a 1mhz" idLabPos="-30.034,-16.5178" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="1 MHz" Program="main.hex" Auto_Load="true" saveEepr="true" Logic_Symbol="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" SerialMon="-1" />
+<item itemtype="MCU" CircId="tiny2313-4" mainComp="false" Show_id="true" Show_Val="false" Pos="-120,-8" rotation="0" hflip="1" vflip="1" label="attiny2313a 4mhz" idLabPos="-30.034,-16.5178" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="4 MHz" Program="main.hex" Auto_Load="true" saveEepr="true" Logic_Symbol="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" SerialMon="-1" />
 
 <item itemtype="Fixed Voltage" CircId="Fixed Voltage-5" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-312,-4" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-5" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="9 V" Out="true" />
 
@@ -72,13 +72,13 @@
 
 <item itemtype="Tunnel" CircId="Tunnel-47" mainComp="false" Show_id="false" Show_Val="false" Pos="232,20" rotation="0" hflip="1" vflip="1" label="Tunnel-47" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="C" IsBus="false" />
 
-<item itemtype="Push" CircId="Push-48" mainComp="false" Show_id="false" Show_Val="false" Pos="-268,116" rotation="0" hflip="1" vflip="1" label="Push-48" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+<item itemtype="Push" CircId="Push-48" mainComp="false" Show_id="true" Show_Val="false" Pos="-268,116" rotation="0" hflip="1" vflip="1" label="MODE" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
 
-<item itemtype="Push" CircId="Push-49" mainComp="false" Show_id="false" Show_Val="false" Pos="-268,156" rotation="0" hflip="1" vflip="1" label="Push-49" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+<item itemtype="Push" CircId="Push-49" mainComp="false" Show_id="true" Show_Val="false" Pos="-268,156" rotation="0" hflip="1" vflip="1" label="SET" idLabPos="-8.10922,-22.8727" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
 
 <item itemtype="Ground" CircId="Ground-50" mainComp="false" Show_id="false" Show_Val="false" Pos="-332,208" rotation="0" hflip="1" vflip="1" label="Ground-50" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Seven Segment" CircId="Seven Segment-60" mainComp="false" Show_id="true" Show_Val="false" Pos="268,28" rotation="0" hflip="1" vflip="1" label="Seconds" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" NumDisplays="2" Vertical_Pins="false" CommonCathode="false" Threshold="1.8 V" MaxCurrent="16 mA" Resistance="1 Ω" />
+<item itemtype="Seven Segment" CircId="Seven Segment-60" mainComp="false" Show_id="true" Show_Val="false" Pos="268,28" rotation="0" hflip="1" vflip="1" label="Seconds" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" NumDisplays="2" Vertical_Pins="false" CommonCathode="false" Threshold="1.8 V" MaxCurrent="1 mA" Resistance="1 Ω" />
 
 <item itemtype="Node" CircId="Node-51" mainComp="false" Pos="-332,156" />
 
@@ -104,23 +104,19 @@
 
 <item itemtype="Connector" uid="Connector-43" startpinid="Tunnel-31-pin" endpinid="Seven Segment-1-pin_a" pointList="20,4,24,4" />
 
-<item itemtype="Connector" uid="Connector-44" startpinid="Tunnel-37-pin" endpinid="Seven Segment-2-pin_a" pointList="124,4,132,4" />
+<item itemtype="Connector" uid="Connector-44" startpinid="Tunnel-37-pin" endpinid="Seven Segment-2-pin_a" pointList="124,4,128,4" />
 
-<item itemtype="Connector" uid="Connector-45" startpinid="Tunnel-36-pin" endpinid="Seven Segment-2-pin_b" pointList="124,12,132,12" />
+<item itemtype="Connector" uid="Connector-45" startpinid="Tunnel-36-pin" endpinid="Seven Segment-2-pin_b" pointList="124,12,128,12" />
 
-<item itemtype="Connector" uid="Connector-46" startpinid="Tunnel-40-pin" endpinid="Seven Segment-2-pin_c" pointList="124,20,132,20" />
+<item itemtype="Connector" uid="Connector-46" startpinid="Tunnel-40-pin" endpinid="Seven Segment-2-pin_c" pointList="124,20,128,20" />
 
-<item itemtype="Connector" uid="Connector-47" startpinid="Tunnel-38-pin" endpinid="Seven Segment-2-pin_d" pointList="124,28,132,28" />
+<item itemtype="Connector" uid="Connector-47" startpinid="Tunnel-38-pin" endpinid="Seven Segment-2-pin_d" pointList="124,28,128,28" />
 
-<item itemtype="Connector" uid="Connector-48" startpinid="Tunnel-34-pin" endpinid="Seven Segment-2-pin_e" pointList="124,36,132,36" />
+<item itemtype="Connector" uid="Connector-48" startpinid="Tunnel-34-pin" endpinid="Seven Segment-2-pin_e" pointList="124,36,128,36" />
 
-<item itemtype="Connector" uid="Connector-49" startpinid="Tunnel-39-pin" endpinid="Seven Segment-2-pin_f" pointList="124,44,132,44" />
+<item itemtype="Connector" uid="Connector-49" startpinid="Tunnel-39-pin" endpinid="Seven Segment-2-pin_f" pointList="124,44,128,44" />
 
-<item itemtype="Connector" uid="Connector-50" startpinid="Tunnel-35-pin" endpinid="Seven Segment-2-pin_g" pointList="124,52,132,52" />
-
-<item itemtype="Connector" uid="Connector-59" startpinid="Push-48-switch0pinN" endpinid="tiny2313-4-PORTD0" pointList="-252,116,-208,116,-208,8,-128,8" />
-
-<item itemtype="Connector" uid="Connector-60" startpinid="Push-49-switch0pinN" endpinid="tiny2313-4-PORTD1" pointList="-252,156,-200,156,-200,16,-128,16" />
+<item itemtype="Connector" uid="Connector-50" startpinid="Tunnel-35-pin" endpinid="Seven Segment-2-pin_g" pointList="124,52,128,52" />
 
 <item itemtype="Connector" uid="Connector-62" startpinid="Push-48-pinP0" endpinid="Node-51-1" pointList="-284,116,-332,116,-332,156" />
 
@@ -160,12 +156,16 @@
 
 <item itemtype="Connector" uid="Connector-130" startpinid="tiny2313-4-PORTB1" endpinid="Tunnel-26-pin" pointList="-80,56,-36,56" />
 
-<item itemtype="Connector" uid="Connector-138" startpinid="tiny2313-4-PORTD5" endpinid="Seven Segment-2-pin_commona" pointList="-128,64,-144,64,-144,92,164,92,164,60" />
+<item itemtype="Connector" uid="Connector-138" startpinid="tiny2313-4-PORTD5" endpinid="Seven Segment-2-pin_commona" pointList="-128,64,-144,64,-144,92,160,92,160,60" />
 
-<item itemtype="Connector" uid="Connector-142" startpinid="tiny2313-4-PORTD4" endpinid="Seven Segment-2-pin_commonb" pointList="-128,56,-164,56,-164,124,196,124,196,60" />
+<item itemtype="Connector" uid="Connector-142" startpinid="tiny2313-4-PORTD4" endpinid="Seven Segment-2-pin_commonb" pointList="-128,56,-164,56,-164,124,192,124,192,60" />
 
 <item itemtype="Connector" uid="Connector-155" startpinid="tiny2313-4-PORTB0" endpinid="Seven Segment-1-pin_commona" pointList="-80,64,56,64,56,60" />
 
 <item itemtype="Connector" uid="Connector-159" startpinid="tiny2313-4-PORTD6" endpinid="Seven Segment-1-pin_commonb" pointList="-80,72,88,72,88,60" />
+
+<item itemtype="Connector" uid="Connector-170" startpinid="Push-49-switch0pinN" endpinid="tiny2313-4-PORTD1" pointList="-252,156,-200,156,-200,16,-128,16" />
+
+<item itemtype="Connector" uid="Connector-171" startpinid="Push-48-switch0pinN" endpinid="tiny2313-4-PORTD0" pointList="-252,116,-208,116,-208,8,-128,8" />
 
 </circuit>

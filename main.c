@@ -1,7 +1,7 @@
 //Program for a simple clock in attiny2313
 
 
-#define F_CPU 1000000UL
+#define F_CPU 4000000UL
 
 #define A 128
 #define B 64
@@ -49,14 +49,30 @@ void clear(){
 void init_timer(){
      TCCR1B |= (1 << WGM12); //sets timer on CTC mode
 
-     OCR1A = 15624; //1 second @1MHz and prescale of 64. Top value that will set flag OCF1A and OCF1B 
+     OCR1A = 15624; //1 second @1MHz and prescale of 256. Top value that will set flag OCF1A and OCF1B 
 
-     TCCR1B |= ((1 << CS11) | (1 << CS10)); //sets cpu clock as timer with prescaler of 64
+     TIMSK |= (1 << OCIE1A); //output compare A match interrupt
+
+     sei(); //enable global interrupts
+
+     TCCR1B |= (1 << CS12); //sets cpu clock as timer with prescaler of 64
  
 }
 
+ISR(TIMER1_COMPA_vect){
+     seconds++;
+}
+
 void increase_time(){
-     //TODO:
+     minutes++;
+     if (minutes == 60){
+          minutes =0;
+          hours++;
+     }
+
+     if (hours == 24){
+          hours = 0;
+     }
 }
 
 int main(){
@@ -64,19 +80,17 @@ int main(){
      DDRB = 255;
      DDRD = 124;
 
+     //buttons pull up
+     PORTD |= ((1 << PIND0) | (1 << PIND1));
+
      init_timer();
 
      while(1){
-
-          if (TIFR & (1 << OCF1A)){ //tifr event flag
-               seconds++;
-               TIFR |= (1 << OCF1A); //clear and resets compare trigger
-
-               if (seconds == 60){
-                    seconds = 0;
-                    increase_time();
-               }
-
+          
+          //update time 
+          if(seconds == 60){
+               seconds = 0;
+               increase_time();
           }
 
           //******  SECONDS  ******//
