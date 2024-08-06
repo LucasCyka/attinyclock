@@ -166,6 +166,6 @@
 
 <item itemtype="Connector" uid="Connector-170" startpinid="Push-49-switch0pinN" endpinid="tiny2313-4-PORTD1" pointList="-252,156,-200,156,-200,16,-128,16" />
 
-<item itemtype="Connector" uid="Connector-171" startpinid="Push-48-switch0pinN" endpinid="tiny2313-4-PORTD0" pointList="-252,116,-208,116,-208,8,-128,8" />
+<item itemtype="Connector" uid="Connector-175" startpinid="Push-48-switch0pinN" endpinid="tiny2313-4-PORTD0" pointList="-252,116,-208,116,-208,8,-128,8" />
 
 </circuit>
