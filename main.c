@@ -188,8 +188,8 @@ int main(){
           //******  SECONDS  ******//
           //lsd
           clear();
-          PORTD |= (1 << PIND2);
           PORTD &= ~(1 << PIND3);
+          PORTD |= (1 << PIND2);
 
           if(onModeSeconds == 1){
                blink_segments(&PORTD,PIND2);
