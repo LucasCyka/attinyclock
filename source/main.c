@@ -57,12 +57,10 @@ void clear(){
      _delay_ms(5);
 }
 
-//too imprecise
-//TODO: check CTC with interrupts
 void init_timer(){
      TCCR1B |= (1 << WGM12); //sets timer on CTC mode
 
-     OCR1A = 15624; //1 second @1MHz and prescale of 256. Top value that will set flag OCF1A and OCF1B 
+     OCR1A = 15624; //1 second @4MHz and prescale of 256. Top value that will set flag OCF1A and OCF1B 
 
      TIMSK |= (1 << OCIE1A); //output compare A match interrupt
 
